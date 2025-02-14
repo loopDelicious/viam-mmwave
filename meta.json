@@ -1,14 +1,14 @@
 {
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "joyce:mmwave",
-  "visibility": "private",
-  "url": "",
+  "visibility": "public",
+  "url": "https://github.com/loopDelicious/viam-mmwave",
   "description": "Modular sensor component: mmwave",
   "models": [
     {
       "api": "rdk:component:sensor",
       "model": "joyce:mmwave:mmwave",
-      "short_description": "Provide a short (100 characters or less) description of this model here",
+      "short_description": "Modular component for the LD2410C mmwave sensor",
       "markdown_link": "README.md#model-joycemmwavemmwave"
     }
   ],
