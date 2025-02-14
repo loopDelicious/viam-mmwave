@@ -1,50 +1,15 @@
-# Module mmwave 
+# Module mmwave
 
-Provide a description of the purpose of the module and any relevant information.
-
-## Model joyce:mmwave:mmwave
-
-Provide a description of the model and any relevant information.
+The `mmwave` module uses the `joyce:mmwave:mmwave` model to get readings from the LD2410C mmwave sensor.
 
 ### Configuration
-The following attribute template can be used to configure this model:
 
-```json
-{
-"attribute_1": <float>,
-"attribute_2": <string>
-}
-```
+To add the sensor component to your Viam machine:
 
-#### Attributes
+- Add a component > sensor > `mmwave`.
+- **Save** your changes in the Viam app, and wait a moment for the configuration to update.
+- Wait a moment for the serial port to initialize at `/dev/ttyUSB0`, with baud rate `256000`, for the radar to initialize.
+- Expand the **TEST** section of the component in the Viam app to see the results of `getReadings`.
+  ![get Readings](sensorOutput.png)
 
-The following attributes are available for this model:
-
-| Name          | Type   | Inclusion | Description                |
-|---------------|--------|-----------|----------------------------|
-| `attribute_1` | float  | Required  | Description of attribute 1 |
-| `attribute_2` | string | Optional  | Description of attribute 2 |
-
-#### Example Configuration
-
-```json
-{
-  "attribute_1": 1.0,
-  "attribute_2": "foo"
-}
-```
-
-### DoCommand
-
-If your model implements DoCommand, provide an example payload of each command that is supported and the arguments that can be used. If your model does not implement DoCommand, remove this section.
-
-#### Example DoCommand
-
-```json
-{
-  "command_name": {
-    "arg1": "foo",
-    "arg2": 1
-  }
-}
-```
+No additional configuration is required for this model.
